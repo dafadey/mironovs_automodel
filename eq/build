@@ -1,0 +1,2 @@
+#!/bin/bash
+g++ -g -O3 test.cpp -o test.exe -I/home/dan/tools/include -L/home/dan/tools/lib -lsimpledraw_glfw3 -lglfw -lfft -Wl,-rpath=/home/dan/tools/lib -L/home/dan/distr/glfw3/build/src/ -Wl,-rpath=/home/dan/distr/glfw3/build/src/

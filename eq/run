@@ -1,0 +1,68 @@
+#!/bin/bash
+
+
+#./test.exe Nx=512 Lx=0.5 dz=0.000003 q=0.0001 a=0.01 Amp=0.064 z0=-3 z1=0 skipCount=8
+# qnew = qold/256
+# dznew = dznew * 256
+# Ampnew = AmpOld/sqrt(256)
+#./test.exe Nx=512 Lx=0.5 dz=0.000768 q=0.000000195312 a=0.01 Amp=0.29625 z0=-3 z1=0 skipCount=8
+
+#DZ=0.00000625
+#SKIP=512
+DZ=0.000003125
+SKIP=256
+NX=4096
+
+#./test.exe Nx=1024 Lx=1.0 dz=0.000768 q=0.0000004 a=0.01 Amp=0.29625 z0=-3 z1=0 skipCount=8
+
+#./test.exe Nx=${NX} Lx=1.0 dz=${DZ} q=0.0000004 a=0.01 Amp=0.2 z0=1 z1=2 skipCount=${SKIP} &
+#./test.exe Nx=${NX} Lx=1.0 dz=${DZ} q=0.0000004 a=0.01 Amp=0.6 z0=1 z1=2 skipCount=${SKIP} &
+#./test.exe Nx=${NX} Lx=1.0 dz=${DZ} q=0.0000004 a=0.01 Amp=0.4 z0=1 z1=2 skipCount=${SKIP} &
+#./test.exe Nx=${NX} Lx=1.0 dz=${DZ} q=0.0000004 a=0.01 Amp=0.8 z0=1 z1=2 skipCount=${SKIP} 
+
+#./test.exe Nx=1024 Lx=1.0 dz=0.0001 q=0.0000004 a=0.01 Amp=0.8 z0=1 z1=1.1 skipCount=32 
+
+#./test.exe Nx=${NX} Lx=1.0 dz=${DZ} q=0.0000002 a=0.01 Amp=0.5 z0=1 z1=2 skipCount=${SKIP} &
+#./test.exe Nx=${NX} Lx=1.0 dz=${DZ} q=0.0000004 a=0.01 Amp=0.5 z0=1 z1=2 skipCount=${SKIP} &
+#./test.exe Nx=${NX} Lx=1.0 dz=${DZ} q=0.0000008 a=0.01 Amp=0.5 z0=1 z1=2 skipCount=${SKIP} &
+
+
+#./test.exe Nx=1024 Lx=1.0 dz=${DZ} q=0.000000823 a=0.02 Amp=0.05 z0=1 z1=2 skipCount=${SKIP} type=1 store=1 draw=0 &
+#./test.exe Nx=1024 Lx=1.0 dz=${DZ} q=0.000000823 a=0.02 Amp=0.13 z0=1 z1=2 skipCount=${SKIP} type=1 store=1 draw=0 &
+#./test.exe Nx=1024 Lx=1.0 dz=${DZ} q=0.000000823 a=0.02 Amp=0.15 z0=1 z1=2 skipCount=${SKIP} type=1 store=1 draw=0 &
+#./test.exe Nx=1024 Lx=1.0 dz=${DZ} q=0.000000823 a=0.02 Amp=0.17 z0=1 z1=2 skipCount=${SKIP} type=1 store=1 draw=0 &
+#./test.exe Nx=1024 Lx=1.0 dz=${DZ} q=0.000000823 a=0.02 Amp=0.2 z0=1 z1=2 skipCount=${SKIP} type=1 store=1 draw=0 &
+#./test.exe Nx=1024 Lx=1.0 dz=${DZ} q=0.000000823 a=0.02 Amp=0.25 z0=1 z1=2 skipCount=${SKIP} type=1 store=1 draw=0 &
+
+#./test.exe Nx=1024 Lx=1.0 dz=0.0001 q=0.0000002 a=0.01 Amp=0.2 z0=-2 z1=0 skipCount=32
+
+#./test.exe Nx=1024 Lx=1.0 dz=${DZ} q=0.000000888 a=0.01 Amp=0.5 z0=1 z1=3 skipCount=${SKIP} type=0 store=1 draw=1 zconst=1 xcp=0.8 prefix="shifted_"
+
+
+
+#---back---back---back---back---back---back---back---back
+
+#./test.exe Nx=${NX} Lx=1.0 dz=${DZ} q=0.0000008 a=0.01 Amp=0.2 z0=-3 z1=0 skipCount=${SKIP} type=0 store=1 draw=1 zconst=0 xcp=0.6 &
+
+#./test.exe Nx=${NX} Lx=1.0 dz=${DZ} q=0.0000008 a=0.01 Amp=0.25 z0=-3 z1=0 skipCount=${SKIP} type=0 store=1 draw=1 zconst=0 xcp=0.6 &
+
+#./test.exe Nx=${NX} Lx=1.0 dz=${DZ} q=0.0000008 a=0.01 Amp=0.3 z0=-3 z1=0 skipCount=${SKIP} type=0 store=1 draw=1 zconst=0 xcp=0.6 &
+
+#./test.exe Nx=${NX} Lx=1.0 dz=${DZ} q=0.0000008 a=0.01 Amp=0.35 z0=-3 z1=0 skipCount=${SKIP} type=0 store=1 draw=1 zconst=0 xcp=0.6 &
+
+#./test.exe Nx=${NX} Lx=1.0 dz=${DZ} q=0.0000008 a=0.01 Amp=0.4 z0=-3 z1=0 skipCount=${SKIP} type=0 store=1 draw=1 zconst=0 xcp=0.6 &
+
+#./test.exe Nx=${NX} Lx=1.0 dz=${DZ} q=0.0000008 a=0.01 Amp=0.7 z0=-3 z1=0 skipCount=${SKIP} type=0 store=1 draw=1 zconst=0 xcp=0.6 &
+
+#./test.exe Nx=${NX} Lx=1.0 dz=${DZ} q=0.0000008 a=0.01 Amp=0.5 z0=-3 z1=0 skipCount=${SKIP} type=0 store=1 draw=1 zconst=0 xcp=0.6 &
+
+#./test.exe Nx=${NX} Lx=1.0 dz=${DZ} q=0.0000008 a=0.01 Amp=0.6 z0=-3 z1=0 skipCount=${SKIP} type=0 store=1 draw=1 zconst=0 xcp=0.6 &
+
+#./test.exe Nx=${NX} Lx=1.0 dz=${DZ} q=0.0000008 a=0.01 Amp=0.8 z0=-3 z1=0 skipCount=${SKIP} type=0 store=1 draw=1 zconst=0 xcp=0.6 &
+
+
+./test.exe Nx=${NX} Lx=1.0 dz=${DZ} q=0.0000004 a=0.01 Amp=0.8 z0=1 z1=3 skipCount=${SKIP} type=0 store=1 draw=1 zconst=0 xcp=0.6 &
+
+./test.exe Nx=${NX} Lx=1.0 dz=${DZ} q=0.0000004 a=0.01 Amp=0.6 z0=1 z1=3 skipCount=${SKIP} type=0 store=1 draw=1 zconst=0 xcp=0.6 &
+
+./test.exe Nx=${NX} Lx=1.0 dz=${DZ} q=0.0000004 a=0.01 Amp=0.2 z0=1 z1=3 skipCount=${SKIP} type=0 store=1 draw=1 zconst=0 xcp=0.6 &
